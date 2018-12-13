@@ -1,0 +1,101 @@
+.fighterpic{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 110px;
+    left: -700px;
+}
+.fighterpic img{
+    position: relative;
+    z-index: 1;
+    height: 950px;
+    bottom: -50px;
+    
+}
+@media (max-width:1400px){
+    .fighterpic img{
+        height: 700px;
+    }
+}
+
+.examplespic img{
+    margin-top:80px;
+}
+
+.examp1{
+    position: relative;
+    height: 500px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px 2px #333333;
+}
+.examp1:hover{
+    z-index: 2;
+    
+}
+
+.examp2{
+    position: relative;
+    border: 2px solid black;
+    top:-370px;
+    right: -140px;
+    z-index: 1;
+    height: 500px;
+    box-shadow: 0px 0px 3px 1px #333333;
+}
+
+.whereimg{
+    opacity: 0;
+}
+.whereimg img{
+    position: relative;
+    height: 500px;
+    top:150px;
+    margin-left: 80px;
+    border: 1px solid rgb(37, 37, 37);
+}
+@media (max-width:1400px){
+    .whereimg img{
+        height: 350px;
+        margin-left: 40px;
+        top:150px;
+    }
+}
+.whereimg img:hover{
+    opacity: 1;
+    animation: imgshow 1s linear 0s;
+    cursor: pointer;
+    overflow: auto;
+}
+@keyframes imgshow {
+    from {opacity: 0.6;}
+    to {opacity: 1;}
+}
+
+.whereimg img:not(:hover){
+    opacity: 0.6;
+    animation: imghide 1s linear 0s;
+}
+
+@keyframes imghide {
+    from {opacity: 1;}
+    to {opacity: 0.6;}
+}
+#motivation iframe{
+    margin-left: 200px;
+}
+.motivvideo{
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-top: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media (max-width: 1400px){
+    #motivation iframe{
+     height: 316px;
+     width: 490px;
+     margin-left: 110px;
+    }
+    .motivvideo{
+      margin-top: 130px;
+    }
+}
+

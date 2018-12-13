@@ -1,0 +1,57 @@
+nav {
+   position: fixed;
+   z-index: 3;
+   display: grid;
+   grid-template-columns: repeat(5,20vw)0%;
+   grid-template-rows: 5vh;
+   grid-template-areas: 
+   "btn1 btn2 btn3 btn4 btn5"
+   
+}
+
+nav div.navbutton{
+    text-align: center;
+    padding-top: 1.5vh;
+    background-color:#1a1a1c;
+    opacity: 0.85;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 1.5vh;
+}
+
+nav div.navbutton:hover{
+    cursor: pointer;
+    animation: navglow 1s linear 0s;
+    opacity: 0.95;
+    background-color: #000000
+}
+
+@keyframes navglow {
+    from {
+        opacity: 0.85;
+        background-color: #1a1a1c;
+    }
+    to {
+        opacity: 0.95;
+        background-color: #000000;
+    }
+}
+
+nav div.navbutton:not(:hover){
+    animation: navdark 0.5s linear 0s;
+}
+
+@keyframes navdark {
+    from {
+        opacity: 0.95;
+        background-color: #000000;
+    }
+    to {
+        opacity: 0.85;
+        background-color: #1a1a1c;
+    }
+}
+nav a{
+    text-decoration: none;
+}
